@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{83293440-56DE-41F3-9DD0-1C7787050D01}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Arac_Kiralama</RootNamespace>
+    <AssemblyName>Arac_Kiralama</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AraçKiralamaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AraçKiralamaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AraçKiralamaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AraçKiralamaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AraçKiralamaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AraçKiralamaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AraçKiralamaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AraçKiralamaDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusSifreUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusSifreUnuttum.Designer.cs">
+      <DependentUpon>FrmMusSifreUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteri.Designer.cs">
+      <DependentUpon>FrmMusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKurumsal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKurumsal.Designer.cs">
+      <DependentUpon>FrmKurumsal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKurumsalGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKurumsalGiris.Designer.cs">
+      <DependentUpon>FrmKurumsalGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKurumsalkayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKurumsalkayıt.Designer.cs">
+      <DependentUpon>FrmKurumsalkayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmkurumsalsifreunuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmkurumsalsifreunuttum.Designer.cs">
+      <DependentUpon>Frmkurumsalsifreunuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusteriGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriGiris.Designer.cs">
+      <DependentUpon>FrmMusteriGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusterikayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusterikayit.Designer.cs">
+      <DependentUpon>FrmMusterikayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sqlbaglan.cs" />
+    <EmbeddedResource Include="FrmMusSifreUnuttum.resx">
+      <DependentUpon>FrmMusSifreUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteri.resx">
+      <DependentUpon>FrmMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKurumsal.resx">
+      <DependentUpon>FrmKurumsal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKurumsalGiris.resx">
+      <DependentUpon>FrmKurumsalGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKurumsalkayıt.resx">
+      <DependentUpon>FrmKurumsalkayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmkurumsalsifreunuttum.resx">
+      <DependentUpon>Frmkurumsalsifreunuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriGiris.resx">
+      <DependentUpon>FrmMusteriGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusterikayit.resx">
+      <DependentUpon>FrmMusterikayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="AraçKiralamaDataSet.xsc">
+      <DependentUpon>AraçKiralamaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AraçKiralamaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AraçKiralamaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AraçKiralamaDataSet.xss">
+      <DependentUpon>AraçKiralamaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AraçKiralamaDataSet1.xsc">
+      <DependentUpon>AraçKiralamaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AraçKiralamaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AraçKiralamaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AraçKiralamaDataSet1.xss">
+      <DependentUpon>AraçKiralamaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AraçKiralamaDataSet2.xsc">
+      <DependentUpon>AraçKiralamaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AraçKiralamaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AraçKiralamaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AraçKiralamaDataSet2.xss">
+      <DependentUpon>AraçKiralamaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AraçKiralamaDataSet3.xsc">
+      <DependentUpon>AraçKiralamaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AraçKiralamaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AraçKiralamaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AraçKiralamaDataSet3.xss">
+      <DependentUpon>AraçKiralamaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="image\Calebamesbury-Classic-American-Cars-Muscle-Car-Chevrolet-Camaro-SS.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
